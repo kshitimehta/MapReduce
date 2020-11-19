@@ -1,5 +1,4 @@
-# mapreduce-kshitimehta
-mapreduce-kshitimehta created by GitHub Classroom
+# MapReduce-kshitimehta
 
 **Collaborator : Shubhankar Ajit Kothari**
 
