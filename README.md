@@ -1,7 +1,7 @@
 # mapreduce-kshitimehta
 mapreduce-kshitimehta created by GitHub Classroom
 
-**Collaborator : Shubhankar Ajit Kothari (There could be a discrepancy in his commit to his github classroom, if possible please consider this submission for both of us)**
+**Collaborator : Shubhankar Ajit Kothari**
 
 Language : Java (version 11.0.8),
 
