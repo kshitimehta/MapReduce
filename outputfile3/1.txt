@@ -1,0 +1,2 @@
+word1	[doc1, doc3]
+word7	[doc2]

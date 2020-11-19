@@ -1,0 +1,5 @@
+word1	['doc1', 'doc3']
+ word2	['doc1']
+ word3	['doc1']
+word5	['doc2']
+ word7	['doc2']

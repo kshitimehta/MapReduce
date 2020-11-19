@@ -1,0 +1,1637 @@
+OUTPUT FOR TESTING ONE APPLICATION  : Missing Time Series Data
+
+App config : 
+
+app.inputfilename=..\\inputfile_big.txt
+app.outputfilename=..\\outputfile_big\\
+app.N=3
+app.class_name=UDF1
+
+Execution :
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master>python execute.py
+Running Standalone Application
+Compiling files
+Note: mapReduce\Worker.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: mapReduce\Worker.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Files Compiled
+Creating jar
+added manifest
+adding: mapReduce/ActiveWorkersClass.class(in = 657) (out= 394)(deflated 40%)
+adding: mapReduce/CompleteClassCounter.class(in = 614) (out= 375)(deflated 38%)
+adding: mapReduce/Driver.class(in = 358) (out= 265)(deflated 25%)
+adding: mapReduce/InactiveWorkersClass.class(in = 643) (out= 386)(deflated 39%)
+adding: mapReduce/KillClass.class(in = 603) (out= 377)(deflated 37%)
+adding: mapReduce/Main.class(in = 533) (out= 365)(deflated 31%)
+adding: mapReduce/MapperStatus.class(in = 626) (out= 374)(deflated 40%)
+adding: mapReduce/Master.class(in = 8140) (out= 4388)(deflated 46%)
+adding: mapReduce/MasterTaskComm.class(in = 5924) (out= 3330)(deflated 43%)
+adding: mapReduce/ProcessStatus.class(in = 516) (out= 329)(deflated 36%)
+adding: mapReduce/UDF1.class(in = 2479) (out= 1236)(deflated 50%)
+adding: mapReduce/UDF2.class(in = 1878) (out= 937)(deflated 50%)
+adding: mapReduce/UDF3.class(in = 1325) (out= 665)(deflated 49%)
+adding: mapReduce/UDFInterface.class(in = 528) (out= 224)(deflated 57%)
+adding: mapReduce/Worker.class(in = 13095) (out= 6586)(deflated 49%)
+adding: mapReduce/WorkerTaskComm.class(in = 3587) (out= 2064)(deflated 42%)
+jar created
+ Executing jar
+Start..
+Sorry couldn?t create specified directory
+..\inputfile_big.txt
+..\outputfile_big\
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55001
+..\outputfile_big\
+Initiating Server Sockets.0
+Worker Created and Executing 0
+
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55002
+..\outputfile_big\
+Worker Created and Executing 1
+
+Initiating Server Sockets.1
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55003
+..\outputfile_big\
+Worker Created and Executing 2
+
+Initiating Server Sockets.2
+Initiating
+Workers Commence.
+Starting Execution: WorkerId0
+mapper
+Initiating
+INITIATING THREAD. 0
+Workers Commence.Socket55001
+
+Initiating
+Workers Commence.
+Initiation Done 0Initiation Done for Master Thread for worker:0
+
+Starting Execution: WorkerId1
+mapper
+INITIATING THREAD. 1
+Socket55002
+Starting Execution: WorkerId2
+mapperInitiation Done for Master Thread for worker:1Initiation Done 1
+
+
+INITIATING THREAD. 2
+Socket55003
+Initiation Done for Master Thread for worker:2
+Initiation Done 2
+Entered Mapping Function
+..\inputfile_big.txt
+FileSize:
+3562
+Partition Size:
+1187
+Worker Id
+0
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Entered Mapping Function
+..\inputfile_big.txt
+FileSize:
+3562
+Partition Size:
+1187
+Worker Id
+1
+Files Written.
+Mapper Stage Completed.
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Entered Mapping Function
+..\inputfile_big.txtFiles Written.
+
+Mapper Stage Completed.FileSize:
+
+3562
+Partition Size:
+1187
+Worker Id
+2
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Files Written.
+Mapper Stage Completed.
+1
+1
+1
+^CTraceback (most recent call last):
+  File "execute.py", line 18, in <module>
+    os.system("java mapReduce.Main")
+KeyboardInterrupt
+^C
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master>python execute.py
+Running Standalone Application
+Compiling files
+Note: mapReduce\Worker.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: mapReduce\Worker.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Files Compiled
+Creating jar
+added manifest
+adding: mapReduce/ActiveWorkersClass.class(in = 657) (out= 394)(deflated 40%)
+adding: mapReduce/CompleteClassCounter.class(in = 614) (out= 375)(deflated 38%)
+adding: mapReduce/Driver.class(in = 358) (out= 265)(deflated 25%)
+adding: mapReduce/InactiveWorkersClass.class(in = 643) (out= 386)(deflated 39%)
+adding: mapReduce/KillClass.class(in = 603) (out= 377)(deflated 37%)
+adding: mapReduce/Main.class(in = 533) (out= 365)(deflated 31%)
+adding: mapReduce/MapperStatus.class(in = 626) (out= 374)(deflated 40%)
+adding: mapReduce/Master.class(in = 8140) (out= 4388)(deflated 46%)
+adding: mapReduce/MasterTaskComm.class(in = 5924) (out= 3330)(deflated 43%)
+adding: mapReduce/ProcessStatus.class(in = 516) (out= 329)(deflated 36%)
+adding: mapReduce/UDF1.class(in = 2479) (out= 1236)(deflated 50%)
+adding: mapReduce/UDF2.class(in = 1878) (out= 937)(deflated 50%)
+adding: mapReduce/UDF3.class(in = 1325) (out= 665)(deflated 49%)
+adding: mapReduce/UDFInterface.class(in = 528) (out= 224)(deflated 57%)
+adding: mapReduce/Worker.class(in = 13095) (out= 6586)(deflated 49%)
+adding: mapReduce/WorkerTaskComm.class(in = 3587) (out= 2064)(deflated 42%)
+jar created
+ Executing jar
+Start..
+Sorry couldn?t create specified directory
+..\inputfile_big.txt
+..\outputfile_big\
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55001
+..\outputfile_big\
+Initiating Server Sockets.0
+Worker Created and Executing 0
+
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55002
+..\outputfile_big\
+Worker Created and Executing 1
+
+Initiating Server Sockets.1
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55003
+..\outputfile_big\
+Worker Created and Executing 2
+
+Initiating Server Sockets.2
+Initiating
+Workers Commence.
+Starting Execution: WorkerId0
+mapper
+INITIATING THREAD. 0
+Socket55001
+Initiating
+Workers Commence.
+Initiation Done 0
+Initiation Done for Master Thread for worker:0
+Initiating
+Workers Commence.
+Starting Execution: WorkerId1
+mapper
+INITIATING THREAD. 1
+Socket55002
+Starting Execution: WorkerId2
+mapper
+INITIATING THREAD. 2
+Socket55003
+Initiation Done for Master Thread for worker:1Initiation Done 1
+
+Initiation Done for Master Thread for worker:2Initiation Done 2
+
+Entered Mapping Function
+..\inputfile_big.txt
+FileSize:
+3562
+Partition Size:
+1187
+Worker Id
+0
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Entered Mapping Function
+..\inputfile_big.txtFiles Written.
+
+FileSize: Mapper Stage Completed.
+
+3562
+Entered Mapping FunctionPartition Size:
+
+..\inputfile_big.txt1187
+
+FileSize: Worker Id
+
+35621
+
+Partition Size:
+1187
+Worker Id
+2
+Data read and cleaned.Data read and cleaned.
+
+Invoking UDF map function....Invoking UDF map function....
+
+Invoking UDFInvoking UDF
+
+Writing to intermediate files.
+Writing to intermediate files.
+Files Written.
+Mapper Stage Completed.Files Written.
+
+Mapper Stage Completed.
+1
+1
+1
+Uncommon DataExiting Thread.
+
+Worker successful: 0 Exiting Thread.
+
+Uncommon DataExiting Thread.
+
+Worker successful: 1 Exiting Thread.
+
+Uncommon DataExiting Thread.
+
+Worker successful: 2 Exiting Thread.
+
+I think all process were successfully completed.Resetting Values.
+Exiting Map Process.
+Exiting Worker Process
+Exiting Map Process.Exiting Map Process.
+
+Exiting Worker Process
+Exiting Worker Process
+Entering reducer phase
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55001
+..\outputfile_big\
+Worker Created and Executing 0
+
+Initiating Server Sockets.0
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55002
+..\outputfile_big\
+Worker Created and Executing 1
+
+Initiating Server Sockets.1
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55003
+..\outputfile_big\
+Worker Created and Executing 2
+
+Initiating Server Sockets.2
+Initiating
+Workers Commence.
+Initiating
+Workers Commence.
+Initiating
+Starting Execution: WorkerId0
+reducer
+Workers Commence.
+INITIATING THREAD. 0
+Socket55001
+Initiation Done for Master Thread for worker:0
+Initiation Done 0
+Starting Execution: WorkerId1
+reducerStarting Execution: WorkerId2
+
+reducer
+INITIATING THREAD. 1
+Socket55002
+INITIATING THREAD. 2
+Socket55003
+Initiation Done for Master Thread for worker:2
+Initiation Done 1Initiation Done for Master Thread for worker:1
+
+Initiation Done 2
+Reading Intermediate Data: 0
+File and worker: tmp\M0_R0.txt        0
+Reading Intermediate Data: 1
+Reading Intermediate Data: 2
+Completed Reading the intermediate files...
+Invoking reduce functions.
+Writing output data.
+..\outputfile_big\0.txt
+File and worker: tmp\M0_R1.txt        1
+File and worker: tmp\M0_R2.txt        2
+File and worker: tmp\M2_R1.txt        1
+Completed Reading the intermediate files...
+Invoking reduce functions.
+File and worker: tmp\M1_R2.txt        2
+File and worker: tmp\M2_R2.txt        2
+Completed Reading the intermediate files...
+Invoking reduce functions.
+Writing output data.
+Writing output data.
+..\outputfile_big\1.txt..\outputfile_big\2.txt
+
+Uncommon DataExiting Thread.
+
+Worker successful: 0 Exiting Thread.
+
+Uncommon DataExiting Thread.
+
+Worker successful: 1 Exiting Thread.
+
+Exiting Thread.
+Uncommon Data
+Worker successful: 2 Exiting Thread.
+
+Exiting Worker Process
+Exiting Worker Process
+Exiting Worker Process
+I think all process were successfully completed.Resetting Values.
+Done.
+End...
+######################## Map Reduce Completed for all Applications ####################
+##########################################################################
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master>python sensors_spark_big.py
+Running Time Series Test Application on Python....
+Reading the inputfile...
+Writing data to spark output file...
+################################## Time Series Test Completed. ##################################
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master>python comparison_big.py
+Comparing Application 1: Time Series Data
+
+Reading the spark output....
+Reading the (MapReduce) code output....
+Executing Comparison for the outputs from spark and the code...
+The outputs are the same
+################################## Application 1 Completed. ##################################
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+OUTPUT FOR TESTING THREE APPLICATIONS WITH FAULT TOLERANCE : N =3
+
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master>python testfile.py
+Compiling files
+Note: mapReduce\Worker.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: mapReduce\Worker.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Files Compiled
+Creating jar
+added manifest
+adding: mapReduce/ActiveWorkersClass.class(in = 657) (out= 394)(deflated 40%)
+adding: mapReduce/CompleteClassCounter.class(in = 614) (out= 375)(deflated 38%)
+adding: mapReduce/Driver.class(in = 358) (out= 265)(deflated 25%)
+adding: mapReduce/InactiveWorkersClass.class(in = 643) (out= 386)(deflated 39%)
+adding: mapReduce/KillClass.class(in = 603) (out= 377)(deflated 37%)
+adding: mapReduce/Main.class(in = 533) (out= 365)(deflated 31%)
+adding: mapReduce/MapperStatus.class(in = 626) (out= 374)(deflated 40%)
+adding: mapReduce/Master.class(in = 8140) (out= 4388)(deflated 46%)
+adding: mapReduce/MasterTaskComm.class(in = 5924) (out= 3330)(deflated 43%)
+adding: mapReduce/ProcessStatus.class(in = 516) (out= 329)(deflated 36%)
+adding: mapReduce/UDF1.class(in = 2479) (out= 1236)(deflated 50%)
+adding: mapReduce/UDF2.class(in = 1878) (out= 937)(deflated 50%)
+adding: mapReduce/UDF3.class(in = 1325) (out= 665)(deflated 49%)
+adding: mapReduce/UDFInterface.class(in = 528) (out= 224)(deflated 57%)
+adding: mapReduce/Worker.class(in = 13095) (out= 6586)(deflated 49%)
+adding: mapReduce/WorkerTaskComm.class(in = 3587) (out= 2064)(deflated 42%)
+jar created
+ Executing jar
+Starting execution for  3 applications....
+Running Application 1
+Start..
+Sorry couldn?t create specified directory
+..\inputfile1.txt
+..\outputfile1\
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55001
+..\outputfile1\
+Initiating Server Sockets.0
+Worker Created and Executing 0
+
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55002
+..\outputfile1\
+Worker Created and Executing 1
+
+Initiating Server Sockets.1
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55003
+..\outputfile1\
+Worker Created and Executing 2
+
+Initiating Server Sockets.2
+Initiating
+Workers Commence.
+Starting Execution: WorkerId0
+mapper
+INITIATING THREAD. 0
+Socket55001
+Initiating
+Workers Commence.
+InitiatingInitiation Done 0Initiation Done for Master Thread for worker:0
+
+
+Workers Commence.
+Starting Execution: WorkerId1
+mapper
+INITIATING THREAD. 1
+Socket55002
+Starting Execution: WorkerId2
+mapper
+INITIATING THREAD. 2
+Socket55003
+Initiation Done for Master Thread for worker:1Initiation Done 1
+
+Initiation Done for Master Thread for worker:2
+Initiation Done 2
+Entered Mapping Function
+..\inputfile1.txt
+FileSize:
+39
+Partition Size:
+13
+Worker Id
+0
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Files Written.
+Mapper Stage Completed.
+Entered Mapping Function
+..\inputfile1.txt
+FileSize:
+39
+Partition Size:
+13
+Worker Id
+1
+Entered Mapping Function
+..\inputfile1.txt
+FileSize:
+39
+Partition Size:
+Data read and cleaned.13
+
+Invoking UDF map function....Worker Id
+
+2
+Invoking UDF
+Writing to intermediate files.
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Files Written.
+Mapper Stage Completed.
+Files Written.
+Mapper Stage Completed.
+I slept for 2 seconds
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src>(taskkill /F /PID 2904  )
+SUCCESS: The process with PID 2904 has been terminated.
+Uncommon Data
+There is an error.
+Error Status: null
+Worker: 1 is dead.
+Worker being removed from active workers
+ Worker: 1 has heartbeat dead due to unknown reasons. Moving wId to Inactive processes to queue execution.
+
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R0.txtC:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src>
+(C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R2.txt
+taskkillC:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M1_R0.txt /F /PID 42972
+) Deleting: M1_R0.txt
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M2_R2.txt
+Deleted intermediate files if any existed.
+Restarting Worker:1
+Starting Process building.
+Exiting Thread: 1
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55004
+..\outputfile1\
+Worker Created and Executing 1
+
+Initiating Server Sockets.1
+1
+SUCCESS: The process with PID 42972 has been terminated.
+Uncommon Data
+There is an error.
+Error Status: null
+Worker: 2 is dead.
+Worker being removed from active workers
+ Worker: 2 has heartbeat dead due to unknown reasons. Moving wId to Inactive processes to queue execution.
+
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R0.txtC:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src>
+(C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R2.txttaskkill
+ /F /PID 6572  C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M2_R2.txt)
+
+Deleting: M2_R2.txt
+Deleted intermediate files if any existed.
+Exiting Thread: 2
+Restarting Worker:2
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55002
+..\outputfile1\
+Worker Created and Executing 2
+
+Initiating Server Sockets.2
+SUCCESS: The process with PID 6572 has been terminated.
+Uncommon Data
+There is an error.
+Error Status: null
+Worker: 0 is dead.
+Worker being removed from active workers
+ Worker: 0 has heartbeat dead due to unknown reasons. Moving wId to Inactive processes to queue execution.
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R0.txt
+Deleting: M0_R0.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R2.txt
+Deleting: M0_R2.txt
+Deleted intermediate files if any existed.
+Restarting Worker:0
+Exiting Thread: 0
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55001
+..\outputfile1\
+Worker Created and Executing 0
+
+Initiating Server Sockets.0
+Initiating
+Workers Commence.
+Starting Execution: WorkerId1
+mapper
+INITIATING THREAD. 1
+Socket55004
+Initiation Done for Master Thread for worker:1
+Initiation Done 1
+Entered Mapping Function
+..\inputfile1.txt
+FileSize:
+39
+Partition Size:
+13
+Worker Id
+1
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Initiating
+Workers Commence.
+Files Written.
+Mapper Stage Completed.
+Starting Execution: WorkerId2
+mapper
+INITIATING THREAD. 2
+Socket55002
+Initiation Done for Master Thread for worker:2
+Initiation Done 2
+Initiating
+Workers Commence.
+Entered Mapping Function
+..\inputfile1.txt
+FileSize:
+39
+Partition Size:
+13
+Worker Id
+2
+Starting Execution: WorkerId0
+mapper
+INITIATING THREAD. 0
+Socket55001
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Initiation Done for Master Thread for worker:0
+Initiation Done 0
+Files Written.
+Mapper Stage Completed.
+Entered Mapping Function
+..\inputfile1.txt
+FileSize:
+39
+Partition Size:
+13
+Worker Id
+0
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Files Written.
+Mapper Stage Completed.
+1
+1
+1
+Uncommon DataExiting Thread.
+
+Worker successful: 1 Exiting Thread.
+
+Exiting Map Process.
+Exiting Worker Process
+Uncommon DataExiting Thread.
+
+Worker successful: 2 Exiting Thread.
+
+Uncommon DataExiting Thread.
+
+Worker successful: 0 Exiting Thread.
+
+I think all process were successfully completed.Resetting Values.
+Exiting Map Process.
+Exiting Worker Process
+Exiting Map Process.
+Exiting Worker Process
+Entering reducer phase
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55001
+..\outputfile1\
+Worker Created and Executing 0
+
+Initiating Server Sockets.0
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55002
+..\outputfile1\
+Worker Created and Executing 1
+
+Initiating Server Sockets.1
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55003
+..\outputfile1\
+Worker Created and Executing 2
+
+Initiating Server Sockets.2
+Initiating
+Workers Commence.
+Initiating
+Workers Commence.
+Initiating
+Workers Commence.
+Starting Execution: WorkerId1
+reducer
+Starting Execution: WorkerId0
+reducer
+INITIATING THREAD. 1
+Socket55002
+INITIATING THREAD. 0
+Socket55001
+Initiation Done for Master Thread for worker:1
+Starting Execution: WorkerId2Initiation Done 1
+
+reducer
+INITIATING THREAD. 2Initiation Done for Master Thread for worker:0Initiation Done 0
+
+Socket55003
+
+Reading Intermediate Data: 1
+Completed Reading the intermediate files...
+Invoking reduce functions.
+Writing output data.
+Initiation Done for Master Thread for worker:2
+Initiation Done 2
+Reading Intermediate Data: 0
+..\outputfile1\1.txt
+Reading Intermediate Data: 2
+File and worker: tmp\M0_R0.txt        0
+File and worker: tmp\M1_R0.txt        0
+Completed Reading the intermediate files...
+Invoking reduce functions.
+File and worker: tmp\M0_R2.txt        2
+Writing output data.
+..\outputfile1\0.txt
+File and worker: tmp\M2_R2.txt        2
+Completed Reading the intermediate files...
+Invoking reduce functions.
+Writing output data.
+..\outputfile1\2.txt
+Uncommon DataExiting Thread.
+
+Worker successful: 1 Exiting Thread.
+
+Uncommon DataExiting Thread.
+
+Worker successful: 0 Exiting Thread.
+
+Exiting Worker Process
+Exiting Thread.
+Uncommon Data
+Worker successful: 2 Exiting Thread.
+
+Exiting Worker Process
+Exiting Worker Process
+I think all process were successfully completed.Resetting Values.
+Done.
+End...
+Deleting the intermediate files on disk...
+Running Application 2
+Start..
+Sorry couldn?t create specified directory
+..\inputfile2.txt
+..\outputfile2\
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55001
+..\outputfile2\
+Initiating Server Sockets.0
+Worker Created and Executing 0
+
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55002
+..\outputfile2\
+Worker Created and Executing 1
+
+Initiating Server Sockets.1
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55003
+..\outputfile2\
+Worker Created and Executing 2
+
+Initiating Server Sockets.2
+Initiating
+Workers Commence.
+Initiating
+Starting Execution: WorkerId0
+mapperWorkers Commence.
+
+INITIATING THREAD. 0
+Socket55001
+Initiating
+Workers Commence.
+Initiation Done 0Initiation Done for Master Thread for worker:0
+
+Starting Execution: WorkerId1
+mapper
+Entered Mapping Function
+..\inputfile2.txt
+FileSize:
+INITIATING THREAD. 1362
+
+Partition Size: Socket55002
+
+120
+Worker Id
+0
+Starting Execution: WorkerId2
+mapper
+INITIATING THREAD. 2
+Socket55003
+Initiation Done for Master Thread for worker:1Initiation Done 1
+
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Initiation Done for Master Thread for worker:2
+Initiation Done 2
+I slept for 2 seconds
+Entered Mapping FunctionWriting to intermediate files.
+
+..\inputfile2.txt
+FileSize:
+362Entered Mapping Function
+..\inputfile2.txt
+FileSize:
+362
+Partition Size:
+
+Files Written.120Partition Size:
+
+
+Mapper Stage Completed.120
+
+Worker IdWorker Id
+
+12
+
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDFData read and cleaned.
+
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.Writing to intermediate files.
+
+Files Written.
+Mapper Stage Completed.
+Files Written.
+Mapper Stage Completed.
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src>(taskkill /F /PID 32580  )
+SUCCESS: The process with PID 32580 has been terminated.
+Uncommon Data
+There is an error.
+Error Status: null
+Worker: 0 is dead.
+Worker being removed from active workers
+ Worker: 0 has heartbeat dead due to unknown reasons. Moving wId to Inactive processes to queue execution.
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R0.txt
+Deleting: M0_R0.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R1.txt
+Deleting: M0_R1.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R2.txt
+Deleting: M0_R2.txt
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M1_R0.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M1_R1.txtC:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src>
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M1_R2.txt(
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M2_R0.txttaskkill
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M2_R1.txt /F /PID 21624
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M2_R2.txt)
+Deleted intermediate files if any existed.
+
+Restarting Worker:0
+Starting Process building.
+Exiting Thread: 0
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55004
+..\outputfile2\
+Worker Created and Executing 0
+
+Initiating Server Sockets.0
+1
+SUCCESS: The process with PID 21624 has been terminated.
+Uncommon Data
+There is an error.
+Error Status: null
+Worker: 1 is dead.
+Worker being removed from active workers
+ Worker: 1 has heartbeat dead due to unknown reasons. Moving wId to Inactive processes to queue execution.
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M1_R0.txt
+Deleting: M1_R0.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M1_R1.txt
+Deleting: M1_R1.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M1_R2.txt
+Deleting: M1_R2.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M2_R0.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M2_R1.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M2_R2.txt
+Deleted intermediate files if any existed.
+Exiting Thread: 1
+Restarting Worker:1
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55001
+..\outputfile2\
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src>(taskkill /F /PID 3752  )
+Worker Created and Executing 1
+
+Initiating Server Sockets.1
+SUCCESS: The process with PID 3752 has been terminated.
+Uncommon Data
+There is an error.
+Error Status: null
+Worker: 2 is dead.
+Worker being removed from active workers
+ Worker: 2 has heartbeat dead due to unknown reasons. Moving wId to Inactive processes to queue execution.
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M2_R0.txt
+Deleting: M2_R0.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M2_R1.txt
+Deleting: M2_R1.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M2_R2.txt
+Deleting: M2_R2.txt
+Deleted intermediate files if any existed.
+Restarting Worker:2
+Exiting Thread: 2
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55002
+..\outputfile2\
+Worker Created and Executing 2
+
+Initiating Server Sockets.2
+Initiating
+Workers Commence.
+Starting Execution: WorkerId0
+mapper
+INITIATING THREAD. 0
+Socket55004
+Initiation Done for Master Thread for worker:0
+Initiation Done 0
+Entered Mapping Function
+..\inputfile2.txt
+FileSize:
+362
+Partition Size:
+120
+Worker Id
+0
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Initiating
+Workers Commence.
+Files Written.
+Mapper Stage Completed.
+Starting Execution: WorkerId1
+mapper
+INITIATING THREAD. 1
+Socket55001
+Initiation Done for Master Thread for worker:1
+Initiation Done 1
+Entered Mapping Function
+..\inputfile2.txt
+FileSize:
+362
+Partition Size:
+120
+Worker Id
+1
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Initiating
+Workers Commence.
+Files Written.
+Mapper Stage Completed.
+Starting Execution: WorkerId2
+mapper
+INITIATING THREAD. 2
+Socket55002
+Initiation Done for Master Thread for worker:2
+Initiation Done 2
+Entered Mapping Function
+..\inputfile2.txt
+FileSize:
+362
+Partition Size:
+120
+Worker Id
+2
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Files Written.
+Mapper Stage Completed.
+1
+1
+1
+Uncommon DataExiting Thread.
+
+Worker successful: 0 Exiting Thread.
+
+Exiting Map Process.
+Exiting Worker Process
+Uncommon DataExiting Thread.
+Worker successful: 1 Exiting Thread.
+
+
+Exiting Map Process.
+Exiting Worker Process
+Uncommon Data
+Worker successful: 2 Exiting Thread.
+Exiting Thread.
+
+I think all process were successfully completed.Resetting Values.
+Exiting Map Process.
+Exiting Worker Process
+Entering reducer phase
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55001
+..\outputfile2\
+Worker Created and Executing 0
+
+Initiating Server Sockets.0
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55002
+..\outputfile2\
+Worker Created and Executing 1
+
+Initiating Server Sockets.1
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55003
+..\outputfile2\
+Worker Created and Executing 2
+
+Initiating Server Sockets.2
+Initiating
+Workers Commence.
+Initiating
+Workers Commence.
+Initiating
+Workers Commence.
+Starting Execution: WorkerId0Starting Execution: WorkerId1
+reducer
+reducer
+
+INITIATING THREAD. 0
+Socket55001
+INITIATING THREAD. 1
+Socket55002
+Starting Execution: WorkerId2
+reducer
+Initiation Done for Master Thread for worker:0
+INITIATING THREAD. 2
+Initiation Done 0Socket55003
+
+Initiation Done for Master Thread for worker:1
+Initiation Done 1
+Reading Intermediate Data: 0
+Reading Intermediate Data: 1
+Initiation Done for Master Thread for worker:2
+Initiation Done 2
+Reading Intermediate Data: 2
+File and worker: tmp\M0_R0.txt        0
+File and worker: tmp\M0_R1.txt        1
+File and worker: tmp\M1_R0.txt        0
+File and worker: tmp\M2_R0.txt        0
+Completed Reading the intermediate files...
+Invoking reduce functions.
+File and worker: tmp\M1_R1.txt        1
+Writing output data.File and worker: tmp\M0_R2.txt        2File and worker: tmp\M2_R1.txt        1
+
+
+Completed Reading the intermediate files.....\outputfile2\0.txt
+
+File and worker: tmp\M1_R2.txt        2Invoking reduce functions.
+
+File and worker: tmp\M2_R2.txt        2
+Completed Reading the intermediate files...
+Invoking reduce functions.
+Writing output data.Writing output data.
+
+..\outputfile2\1.txt
+..\outputfile2\2.txt
+Uncommon DataExiting Thread.
+
+Exiting Thread.Worker successful: 0 Exiting Thread.
+
+Uncommon Data
+
+Worker successful: 1 Exiting Thread.
+
+Exiting Thread.Uncommon Data
+
+Worker successful: 2 Exiting Thread.
+
+Exiting Worker Process
+Exiting Worker Process
+Exiting Worker Process
+I think all process were successfully completed.Resetting Values.
+Done.
+End...
+Deleting the intermediate files on disk...
+Running Application 3
+Start..
+Sorry couldn?t create specified directory
+..\inputfile3.txt
+..\outputfile3\
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55001
+..\outputfile3\
+Initiating Server Sockets.0
+Worker Created and Executing 0
+
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55002
+..\outputfile3\
+Worker Created and Executing 1
+
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55002
+..\outputfile3\
+Initiating Server Sockets.1
+Initiating Server Sockets.2
+Worker Created and Executing 2
+
+S0ocket Errors000
+Initiation Done for Master Thread for worker:2
+Uncommon Data
+There is an error.
+Error Status: null
+Worker: 2 is dead.
+Worker being removed from active workers
+ Worker: 2 has heartbeat dead due to unknown reasons. Moving wId to Inactive processes to queue execution.
+
+Deleted intermediate files if any existed.
+Restarting Worker:2
+Starting Process building.
+Exiting Thread: 2
+Sockets Working and Available.Exception in thread "Thread-2"
+Closing Data
+Closing Server socket.java.lang.NullPointerException
+
+55003
+..\outputfile3\ at mapReduce.MasterTaskComm.run(Master.java:699)
+        at java.base/java.lang.Thread.run(Thread.java:834)
+
+Worker Created and Executing 2
+
+Initiating Server Sockets.2
+Initiating
+Workers Commence.
+Starting Execution: WorkerId0
+mapper
+INITIATING THREAD. 0
+Socket55001
+Initiating
+Workers Commence.
+Initiating
+Workers Commence.
+Initiation Done for Master Thread for worker:0Initiation Done 0
+
+Initiating
+Workers Commence.
+Entered Mapping Function
+..\inputfile3.txt
+FileSize:
+55
+Partition Size:
+18
+Worker Id
+0
+Starting Execution: WorkerId1
+mapper
+I slept for 2 seconds
+INITIATING THREAD. 1
+Starting Execution: WorkerId2Socket55002
+mapper
+
+Starting Execution: WorkerId2
+mapper
+Data read and cleaned.
+Invoking UDF map function....INITIATING THREAD. 2
+
+Invoking UDF
+Socket55002
+INITIATING THREAD. 2
+Writing to intermediate files.Initiation Done for Master Thread for worker:1Initiation Done 1
+Socket55003
+
+
+Entered Mapping Function
+..\inputfile3.txt
+FileSize: Initiation Done 2
+Files Written.Entered Mapping Function
+Entered Mapping Function
+
+55Initiation Done for Master Thread for worker:2
+Mapper Stage Completed...\inputfile3.txt
+
+..\inputfile3.txt
+
+Partition Size: Initiation Done 2
+
+
+FileSize: 18FileSize:
+
+Worker Id55
+1
+Partition Size:
+18
+
+55
+Partition Size:
+18
+Worker Id
+2
+
+Worker Id
+2
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Files Written.
+Writing to intermediate files.Mapper Stage Completed.
+
+Files Written.
+Mapper Stage Completed.
+Files Written.
+Mapper Stage Completed.
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src>(taskkill /F /PID 28128  )
+SUCCESS: The process with PID 28128 has been terminated.
+Uncommon Data
+There is an error.
+
+Error Status: nullC:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src>
+Worker: 1 is dead.(
+Worker being removed from active workerstaskkill
+ /F /PID 8672   Worker: 1 has heartbeat dead due to unknown reasons. Moving wId to Inactive processes to queue execution.
+
+)
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R0.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R1.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R2.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M1_R1.txt
+Deleting: M1_R1.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M1_R2.txt
+Deleting: M1_R2.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M2_R1.txt
+Deleted intermediate files if any existed.
+Exiting Thread: 1
+Restarting Worker:1
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55002
+..\outputfile3\
+Worker Created and Executing 1
+
+Initiating Server Sockets.1
+1
+SUCCESS: The process with PID 8672 has been terminated.
+Uncommon Data
+There is an error.
+
+Error Status: nullC:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src>
+(Worker: 2 is dead.taskkill /F /PID 45140  )
+Worker being removed from active workers
+
+ Worker: 2 has heartbeat dead due to unknown reasons. Moving wId to Inactive processes to queue execution.
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R0.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R1.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R2.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M2_R1.txt
+Deleting: M2_R1.txt
+Deleted intermediate files if any existed.
+Exiting Thread: 2
+Restarting Worker:2
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55003
+..\outputfile3\
+Worker Created and Executing 2
+1
+
+Initiating Server Sockets.2
+SUCCESS: The process with PID 45140 has been terminated.
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src>(taskkill /F /PID 45208  )
+SUCCESS: The process with PID 45208 has been terminated.
+Uncommon Data
+There is an error.
+Error Status: null
+Worker: 0 is dead.
+Worker being removed from active workers
+ Worker: 0 has heartbeat dead due to unknown reasons. Moving wId to Inactive processes to queue execution.
+
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R0.txt
+Deleting: M0_R0.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R1.txt
+Deleting: M0_R1.txt
+C:\Users\kshit\eclipse-workspace\mapreduce-kshitimehta-master\src\tmp\M0_R2.txt
+Deleting: M0_R2.txt
+Deleted intermediate files if any existed.
+Restarting Worker:0
+Exiting Thread: 0
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55001
+..\outputfile3\
+Worker Created and Executing 0
+
+Initiating Server Sockets.0
+Initiating
+Workers Commence.
+Starting Execution: WorkerId1
+mapper
+INITIATING THREAD. 1
+Socket55002
+Initiation Done for Master Thread for worker:1
+Initiation Done 1
+Entered Mapping Function
+..\inputfile3.txt
+FileSize:
+55
+Partition Size:
+18
+Worker Id
+1
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Initiating
+Workers Commence.
+Files Written.
+Mapper Stage Completed.
+Starting Execution: WorkerId2
+mapper
+INITIATING THREAD. 2
+Socket55003
+Initiation Done for Master Thread for worker:2
+Initiation Done 2
+Entered Mapping Function
+..\inputfile3.txt
+FileSize:
+55
+Partition Size:
+18
+Worker Id
+2
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Files Written.
+Mapper Stage Completed.
+Initiating
+Workers Commence.
+Starting Execution: WorkerId0
+mapper
+INITIATING THREAD. 0
+Socket55001
+Initiation Done for Master Thread for worker:0
+Initiation Done 0
+Entered Mapping Function
+..\inputfile3.txt
+FileSize:
+55
+Partition Size:
+18
+Worker Id
+0
+Data read and cleaned.
+Invoking UDF map function....
+Invoking UDF
+Writing to intermediate files.
+Files Written.
+Mapper Stage Completed.
+1
+1
+1
+Uncommon Data
+Exiting Thread.
+Worker successful: 1 Exiting Thread.
+
+Exiting Map Process.
+Exiting Worker Process
+Uncommon Data
+Worker successful: 2 Exiting Thread.
+
+Exiting Thread.
+Exiting Map Process.
+Exiting Worker Process
+Uncommon Data
+Exiting Thread.Worker successful: 0 Exiting Thread.
+
+
+I think all process were successfully completed.Resetting Values.
+Exiting Map Process.
+Exiting Worker Process
+Entering reducer phase
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55001
+..\outputfile3\
+Worker Created and Executing 0
+
+Initiating Server Sockets.0
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55002
+..\outputfile3\
+Worker Created and Executing 1
+
+Initiating Server Sockets.1
+Starting Process building.
+Sockets Working and Available.
+Closing Data
+Closing Server socket.
+55003
+..\outputfile3\
+Worker Created and Executing 2
+
+Initiating Server Sockets.2
+Initiating
+Workers Commence.
+Initiating
+Initiating
+Workers Commence.
+Workers Commence.
+Starting Execution: WorkerId0
+reducer
+INITIATING THREAD. 0
+Socket55001
+Starting Execution: WorkerId2
+reducer
+Starting Execution: WorkerId1
+INITIATING THREAD. 2
+Socket55003reducer
+
+Initiation Done for Master Thread for worker:0Initiation Done 0
+
+INITIATING THREAD. 1
+Socket55002
+Initiation Done for Master Thread for worker:2
+Initiation Done 2
+Initiation Done for Master Thread for worker:1
+Initiation Done 1
+Reading Intermediate Data: 0
+Reading Intermediate Data: 2
+Reading Intermediate Data: 1
+File and worker: tmp\M0_R0.txt        0
+File and worker: tmp\M0_R2.txt        2
+File and worker: tmp\M0_R1.txt        1Completed Reading the intermediate files...
+
+Invoking reduce functions.File and worker: tmp\M1_R2.txt        2
+
+Completed Reading the intermediate files...
+Invoking reduce functions.
+Writing output data.
+Writing output data.
+File and worker: tmp\M1_R1.txt        1
+File and worker: tmp\M2_R1.txt        1
+..\outputfile3\0.txt
+Completed Reading the intermediate files.....\outputfile3\2.txt
+
+Invoking reduce functions.
+Writing output data.
+..\outputfile3\1.txt
+Uncommon Data
+Exiting Thread.Worker successful: 0 Exiting Thread.
+
+
+Uncommon DataExiting Thread.
+
+Worker successful: 2 Exiting Thread.
+
+Uncommon Data
+Exiting Thread.Worker successful: 1 Exiting Thread.
+
+
+Exiting Worker Process
+Exiting Worker Process
+Exiting Worker Process
+I think all process were successfully completed.Resetting Values.
+Done.
+End...
+Deleting the intermediate files on disk...
+######################## Map Reduce Completed for all Applications ####################
+Running Time Series Test Application on Python....
+Reading the inputfile...
+Writing data to spark output file...
+################################## Time Series Test Completed. ##################################
+Running Inverted Index Test Application on Python....
+Reading the input file...
+Writing data to spark output file...
+################################## Inverted Index Test Completed. ##################################
+Setting the HADOOP_HOME environment variable....
+C:\winutils
+Running Word Count Test Application on PySpark....
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/C:/Users/kshit/AppData/Local/Programs/Python/Python38-32/Lib/site-packages/pyspark/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/10/27 20:53:37 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Reading the inputfile.....
+Spark running map and reduce...
+C:\Users\kshit\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kshit\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kshit\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kshit\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+Writing the spark output to file....
+################################## Word Count Test Completed. ##################################
+Executing Automated Testing.....
+SUCCESS: The process with PID 39104 (child process of PID 26696) has been terminated.
+SUCCESS: The process with PID 26696 (child process of PID 32984) has been terminated.
+SUCCESS: The process with PID 32984 (child process of PID 17072) has been terminated.
+Comparing Application 1: Time Series Data
+
+Reading the spark output....
+Reading the (MapReduce) code output....
+Executing Comparison for the outputs from spark and the code...
+The outputs are the same
+################################## Application 1 Completed. ##################################
+
+Comparing Application 2: Word Count Data
+
+Reading the spark output....
+Reading the (MapReduce) code output....
+Executing Comparison for the outputs from spark and the code...
+The outputs are the same
+################################## Application 2 Completed. ##################################
+
+Comparing Application 3: Inverted Index
+
+Reading the spark output....
+Reading the (MapReduce) code output....
+Executing Comparison for the outputs from spark and the code...
+The outputs are the same
+################################## Application 3 Completed. ##################################
+Comparison completed for all applications
+##########################################################################

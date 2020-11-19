@@ -1,0 +1,10 @@
+text text text
+text text text 
+file file file 
+file file file
+tIt is not necessary,
+as FileWriter will try to create the file inherently
+if it does not exist. If the file can not be created,
+an IOException will be thrown. However adding an additional
+check helps understandability and also creates a defensive
+spot in the code to extend error handling. 

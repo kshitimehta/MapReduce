@@ -1,0 +1,2 @@
+word2	[doc1]
+word5	[doc2]
